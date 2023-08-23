@@ -8,23 +8,19 @@
     <script src="index.js" defer></script>
     <title>To do list</title>
 </head>
-<header>
-    <h1 id="title">To Do List</h1>
-</header>
-<main>
-<input type="text" name="" id="" class="to-do-list" value="">
-<input type="text" name="" id="" class="to-do-list">
-<input type="text" name="" id="" class="to-do-list">
-<input type="text" name="" id=""
-class="to-do-list">
-<input type="text" name="" id=""
-class="to-do-list">
-<input type="text" name="" id=""
-class="to-do-list">
-<input type="text" name="" id=""
-class="to-do-list">
-</main>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1 id="title">To Do List &#9998;</h1>
+        </header>
+        <form class="add-list">
+        <!-- Add new task -->
+            <input type="text" id="task-added" value="" placeholder="' need to study for javascript '">
+            <button class="add-list-btn">add task</button>
+        </form>
+        <ul id="task-list">
+            <li class="task"><span>&#9744;</span> I am stuck <span class="exit">&#10007;</span></li>
+        </ul>
+    </div>
 </body>
 </html>
