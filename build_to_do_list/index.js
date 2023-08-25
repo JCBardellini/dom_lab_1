@@ -32,9 +32,25 @@ taskForm.addEventListener("submit", (e) => {
     taskTextContent.textContent = taskText;
     // when checked change the text content to a checked box and cross the word
     startSpanElement.addEventListener("click", () => {
-      startSpanElement.textContent = "☑ "; // changing the square box to a check box
-      taskTextContent.style.textDecorationLine = "line-through"; // putting a line across the text
+      if (startSpanElement.textContent === "☐ ") {
+        // adding the checkbox and line through
+        startSpanElement.textContent = "☑ ";
+        taskTextContent.style.textDecorationLine = "line-through";
+      } else {
+        // removing the checkbox and line through
+        startSpanElement.textContent = "☐ ";
+        taskTextContent.style.textDecorationLine = "";
+      }
     });
+    // startSpanElement.addEventListener("click", () => {
+    //   startSpanElement.textContent = "☑ ";
+    //   taskTextContent.style.textDecorationLine = "line-through";
+    // });
+    // // removing the checkmark
+    // startSpanElement.addEventListener("click", () => {
+    //   startSpanElement.textContent = "☐ ";
+    //   taskTextContent.style.textDecorationLine = "";
+    // });
     // creating the end span element
     const endSpanElement = document.createElement("span");
     // adding class name to our end span element
