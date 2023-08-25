@@ -32,8 +32,8 @@ taskForm.addEventListener("submit", (e) => {
     taskTextContent.textContent = taskText;
     // when checked change the text content to a checked box and cross the word
     startSpanElement.addEventListener("click", () => {
-      startSpanElement.textContent = "☑ ";
-      taskTextContent.style.textDecorationLine = "line-through";
+      startSpanElement.textContent = "☑ "; // changing the square box to a check box
+      taskTextContent.style.textDecorationLine = "line-through"; // putting a line across the text
     });
     // creating the end span element
     const endSpanElement = document.createElement("span");
