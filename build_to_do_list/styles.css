@@ -11,12 +11,11 @@
     grid-template-rows: 75px  30px 1fr;
     margin: 20px auto 0;
     width: 400px;
-    height: 600px;
+    min-height: 600px;
     background-color: #becdd1;
     border: 1px dashed black;
     border-radius: 10px;
     gap: 2px;
-    
 }
 /* title section */
 #title {
@@ -30,7 +29,7 @@
     text-decoration-thickness: 2px;
 }
 /* add task section, with includes button and input */
-.add-list {
+.task-form {
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -66,11 +65,18 @@
 .task {
     width: 100%;
     border-bottom: 2px dashed black;
-    padding-bottom: 5px;
+    padding: 6px 0;
     list-style-type: none;
     font-size: 1.05rem;
 }
 .exit {
     font-weight: bold;
     float: right;
+    cursor: pointer;
+}
+.complete {
+    cursor: pointer;
+}
+.exit:hover {
+    color: red;
 }
